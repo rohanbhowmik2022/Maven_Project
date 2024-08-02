@@ -19,15 +19,22 @@
     <finalName>my-webapp</finalName>
     <plugins>
     <plugin>
-      <groupId>org.codehaus.mojo</groupId>
-      <artifactId>cobertura-maven-plugin</artifactId>
-      <version>2.7</version>
-      <configuration>
-      <formats>
-      <format>xml</format>
-      </formats>
-      </configuration>
-    </plugin>
+<groupId>org.codehaus.mojo</groupId>
+<artifactId>cobertura-maven-plugin</artifactId>
+<version>2.7</version>
+<configuration>
+<formats>
+<format>xml</format>
+</formats>
+</configuration>
+<executions>
+<execution>
+<goals>
+<goal>cobertura</goal>
+</goals>
+</execution>
+</executions>
+</plugin>
     </plugins>
   </build>
 </project>
